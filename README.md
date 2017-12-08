@@ -6,14 +6,20 @@
 
 (2)当前目录安装：npm install --save-dev webpack
 
-2.必须安装的几个包
+2.使用babel必须安装的几个包
 
-npm install babel-core babel-loader babel-preset-2015 babel-preset-react --save-dev
+npm install babel-core babel-loader babel-preset-es2015(注意npm版本) babel-preset-react --save-dev
 
-3.自动引用js
+3.js文件打包
 
 npm install html-webpack-plugin --save-dev
 
-4.自动引用css
+4.css文件打包
 
 npm install extract-text-webpack-plugin --save-dev
+
+5.图片打包及路径配置
+
+npm install style-loader css-loader file-loader url-loader --save-dev
+
+*问题：css中background属性图片路径存在问题，尚未解决
